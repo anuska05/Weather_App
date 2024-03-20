@@ -12,7 +12,7 @@ if __name__ == '__main__':
     # print(r.text) type=str
     wdic = json.loads(r.text)  # parsed into dict
     w = wdic["current"]["temp_c"]
-    c=wdic["current"]["condition"]["text"]
+    c = wdic["current"]["condition"]["text"]
 
     engine.say(f"The current weather in {city} is {w} degrees and you will experience {c}.")
     engine.runAndWait()
